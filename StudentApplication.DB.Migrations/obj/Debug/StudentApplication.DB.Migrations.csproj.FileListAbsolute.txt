@@ -1,0 +1,17 @@
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.Migrations.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.Migrations.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.Runner.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\PeanutButter.FluentMigrator.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.Core.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\EntityFramework.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.xml
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.Runner.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.Core.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\EntityFramework.xml
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.csprojResolveAssemblyReference.cache
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.pdb

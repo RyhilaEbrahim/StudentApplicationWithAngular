@@ -1,0 +1,12 @@
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\StudentApplication.DB.dll.config
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\StudentApplication.DB.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\StudentApplication.DB.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\EntityFramework.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\StudentApplication.Core.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\StudentApplication.Core.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\EntityFramework.xml
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\obj\Debug\StudentApplication.DB.csprojResolveAssemblyReference.cache
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\obj\Debug\StudentApplication.DB.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB\obj\Debug\StudentApplication.DB.pdb

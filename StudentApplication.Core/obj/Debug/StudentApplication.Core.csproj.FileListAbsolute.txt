@@ -1,0 +1,4 @@
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Core\bin\Debug\StudentApplication.Core.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Core\bin\Debug\StudentApplication.Core.pdb
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Core\obj\Debug\StudentApplication.Core.dll
+c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Core\obj\Debug\StudentApplication.Core.pdb
