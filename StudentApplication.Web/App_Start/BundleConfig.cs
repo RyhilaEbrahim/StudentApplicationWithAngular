@@ -29,7 +29,9 @@ namespace StudentApplication.Web
                 "~/Scripts/app/home.viewmodel.js",
                 "~/Scripts/app/_run.js",
                 "~/Scripts/StudentClient.js",
-               
+                "~/Scripts/Edit.js",
+                "~/Scripts/TestStudent.js",
+                "~/Scripts/app.js",
                 "~/Scripts/Service.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're

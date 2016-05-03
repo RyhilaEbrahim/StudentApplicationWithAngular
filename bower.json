@@ -1,0 +1,24 @@
+{
+  "name": "studentapplication",
+  "description": "student application package",
+  "main": "index.js",
+  "authors": [
+    "Ryhila"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "student",
+    "application"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-xeditable": "^0.1.11"
+  }
+}

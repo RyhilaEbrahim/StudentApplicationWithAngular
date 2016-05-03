@@ -1,0 +1,26 @@
+{
+  "name": "studentapplication",
+  "version": "0.0.0",
+  "description": "student application package",
+  "main": "index.js",
+  "scripts": {
+    "test": " \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyhilaEbrahim/StudentApplicationWithAngular.git"
+  },
+  "keywords": [
+    "student",
+    "application"
+  ],
+  "author": "Ryhila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyhilaEbrahim/StudentApplicationWithAngular/issues"
+  },
+  "homepage": "https://github.com/RyhilaEbrahim/StudentApplicationWithAngular#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}

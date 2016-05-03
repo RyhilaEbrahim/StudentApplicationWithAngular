@@ -1,0 +1,38 @@
+﻿@model StudentApplication.Web.Models.StudentViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+<div ng-app="demo" ng-controller="Ctrl">
+    <table>
+        <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th></th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contact in model.contacts" ng-include="getTemplate(contact)"></tr>
+        </tbody>
+    </table>
+
+    <script type="text/ng-template" id="display">
+        <td>{{contact.name}}</td>
+        <td>{{contact.age}}</td>
+        <td>
+            <button ng-click="editContact(contact)">Edit</button>
+        </td>
+    </script>
+    <script type="text/ng-template" id="edit">
+        <td><input type="text" ng-model="model.selected.name" /></td>
+        <td><input type="text" ng-model="model.selected.age" /></td>
+        <td>
+            <button ng-click="saveContact($index)">Save</button>
+            <button ng-click="reset()">Cancel</button>
+        </td>
+    </script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+<script src="~/Scripts/Edit.js"></script>

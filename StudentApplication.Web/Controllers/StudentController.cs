@@ -28,6 +28,19 @@ namespace StudentApplication.Web.Controllers
             return View();
         }
        
+            public ActionResult Edit()
+        {
+            return View();
+        }
+       public ActionResult Create()
+        {
+            return View();
+        }
+       public ActionResult editingInLine()
+        {
+            return View();
+        }
+       
         
 
         public JsonResult GetStudents()

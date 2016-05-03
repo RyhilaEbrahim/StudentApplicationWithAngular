@@ -14,10 +14,9 @@
     <br />
     <div data-ng-controller="StudentController as vm" ng-form ="myform">
         <table class="table">
-            <tr>
-                <td><b></b></td>
 
-                <td><b>Name</b></td>
+            <tr>
+                 <td><b>Name</b></td>
                 <td><b>Email</b></td>
                 <td><b>Class</b></td>
                 <td><b>EnrollYear</b></td>
@@ -25,81 +24,78 @@
                 <td><b>Country</b></td>
             </tr>
 
-            <tr ng-repeat="student in vm.students">
-                <td>{{student.StudentId}}</td>
-                <td>{{student.Name}}</td>
-                <td>{{student.Email}}</td>
-                <td>{{student.Class}}</td>
-                <td>{{student.EnrollYear}}</td>
-                <td>{{student.City}}</td>
-                <td>{{student.Country}}</td>
-                <td>
+            <tr ng-repeat="student in vm.students "  >
+@*                <script type="text/ng-template" id="display">*@
 
-                    <span ng-click="vm.editStudent(student)" class="btn btn-primary">Edit</span>         
-                    <span ng-click="vm.delete(student)" class="btn btn-danger">Delete</span>
-                    
-                </td>
-            </tr>
+                    <td>{{student.Name}}</td>
+                    <td>{{student.Email}}</td>
+                    <td>{{student.Class}}</td>
+                    <td>{{student.EnrollYear}}</td>
+                    <td>{{student.City}}</td>
+                    <td>{{student.Country}}</td>
+                    <td>
+
+@*                        <span ng-click="vm.editEmployee(student)" class="btn btn-primary">Edit</span>*@
+@*                        <span ng-click="vm.delete(student)" class="btn btn-danger">Delete</span>*@
+
+                    </td>
+
+                </tr>
         </table>
         <span ng-click="vm.addStudent()" class="btn btn-default">Add</span>
 
         <div ng-show="vm.divstudent">
             <p class="divHead"></p>
-           <table class="table">
-               <tr>
-                   <td><b><i>{{vm.action}} Student</i></b></td>
+            <table class="table">
+                <tr>
+                    <td><b><i>{{vm.action}} Student</i></b></td>
 
-               </tr>
-               
-                   <tr>
-                       <td><b>Id</b></td>
-                       <td>
-                           <input type="text" disabled="disabled" ng-model="vm.StudentId" />
-                       </td>
-                       <td><b>Name</b></td>
-                       <td>
-                           <div class="col-sm-4" ng-class="{'has-error':subForm.name.$error.required && !subForm.name.$pristine}">
-                               <input type="text" ng-model="vm.Name" placeholder="Enter name" class="form-control" required/>
-                               <p ng-show="subForm.name.$error.required && !subForm.name.$pristine" class="help-block">This field is required.</p>
-                           </div>
-</td>
+                </tr>
 
-                   </tr>
+                <tr>
+                    <td><b>Id</b></td>
+                    <td>
+                        <input type="text" disabled="disabled" ng-model="vm.StudentId" />
+                    </td>
+                    <td><b>Name</b></td>
+                    <td>
+                        <input required  type="text" ng-model="vm.Name"  placeholder="Enter name" />
+                    </td>
 
-                   <tr>
-                       <td><b>Email</b></td>
-                       <td>
-                           <input type="text" ng-model="vm.Email" ng-required="true" placeholder="Enter email" />
-                       </td>
-                       <td><b>Year Enrolled</b></td>
-                       <td>
-                           <input type="text" ng-model="vm.EnrollYear" ng-required="true" placeholder="Enter year enrolled" />
-                       </td>
-                   </tr>
-                   <tr>
-                       <td><b>Class</b></td>
-                       <td>
-                           <input type="text" ng-model="vm.Class" ng-required="true" placeholder="Enter Class" />
-                       </td>
-                       <td><b>City</b></td>
-                       <td>
-                           <input type="text" ng-model="vm.City" ng-required="true" placeholder="Enter City" />
+                </tr>
 
-                       </td>
-                   </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>
+                        <input type="text" ng-model="vm.Email" ng-required="true" placeholder="Enter email" />
+                    </td>
+                    <td><b>Year Enrolled</b></td>
+                    <td>
+                        <input type="text" ng-model="vm.EnrollYear" ng-required="true" placeholder="Enter year enrolled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Class</b></td>
+                    <td>
+                        <input type="text" ng-model="vm.Class" ng-required="true" placeholder="Enter Class"/>
+                    </td>
+                    <td><b>City</b></td>
+                    <td>
+                        <input type="text" ng-model="vm.City" ng-required="true" placeholder="Enter City"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Country</b></td>
+                    <td>
+                        <input type="text" ng-model="vm.Country" ng-required="true" placeholder="Enter Country" />
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="button" ng-disabled="!myform.$valid" class="btn btn-default" value="Save" ng-click="vm.save()" />
+                        <input type="button" class="btn btn-danger" value="Cancel" ng-click="vm.cancel()" />
+                    </td>
+                </tr>
 
-                   <tr>
-                       <td><b>Country</b></td>
-                       <td>
-                           <input type="text" ng-model="vm.Country" ng-required="true" placeholder="Enter Country" />
-                       </td>
-                       <td></td>
-                       <td>
-                           <input type="button" class="btn btn-default" value="Save" ng-click="vm.save()" ng-disable="!enableSubmitButton" />
-                           <input type="button" class="btn btn-danger" value="Cancel" ng-click="vm.cancel()" />
-                       </td>
-                   </tr>
-               
             </table>
         </div>
     </div>
@@ -109,6 +105,8 @@
         @section scripts{
            <script src="~/Scripts/StudentClient.js"></script>
             <script src="~/Scripts/Service.js"></script>
+<link href="~/bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet" />
+<script src="~/bower_components/angular-xeditable/dist/js/xeditable.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 
         }

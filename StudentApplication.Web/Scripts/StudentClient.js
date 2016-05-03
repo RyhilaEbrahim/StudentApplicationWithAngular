@@ -2,9 +2,23 @@
 StudentApp.controller("StudentController", [
     "StudentService", function(StudentService) {
         var vm = this;
+        //Added Code
+        vm.selected = {};
         vm.divstudent = false;
         getAllStudents();
 
+        //Added code
+        vm.value = new Date().toISOString().split("T")[0];
+
+        vm.reset = function () {
+            vm.selected = {};
+        };
+        vm.editEmployee = function (student)
+        {
+            vm.selected = angular.copy(student);
+        };
+
+      
         //To Get all student records  
         function getAllStudents() {
             /// debugger;
@@ -16,19 +30,8 @@ StudentApp.controller("StudentController", [
             });
         }
 
-//        vm.getAllCities =function() {
-//            //            debugger;
-//        alert('shgdefjhvsdf');
-//            var getStudentData = StudentService.getCities();
-//            getStudentData.then(function (city) {
-//                vm.cities = city.data;
-//            }, function ()
-//            {
-//                alert("Error in getting cities records");
-//            });
-        //        };
-
-   
+       
+       
         vm.editStudent = function(student) {
             //            debugger;
             var getStudentData = StudentService.getStudent(student.Id);
@@ -121,5 +124,8 @@ StudentApp.controller("StudentController", [
         vm.cancel = function() {
             vm.divstudent = false;
         };
+
+      
+      
     }
 ]);
