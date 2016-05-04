@@ -307,6 +307,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\Edit.js" />
     <Content Include="Scripts\Service.js" />
     <Content Include="Scripts\StudentClient.js" />
@@ -368,6 +369,8 @@
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
     <Content Include="Scripts\TestStudent.js" />
+    <Content Include="Scripts\xeditable.js" />
+    <Content Include="Scripts\xeditable.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\app\_run.js" />
     <Content Include="Scripts\app\app.datamodel.js" />
@@ -414,6 +417,7 @@
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\Editable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

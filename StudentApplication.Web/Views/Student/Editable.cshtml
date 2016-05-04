@@ -1,0 +1,28 @@
+﻿@model StudentApplication.Web.Models.StudentViewModel
+
+@{
+    ViewBag.Title = "Editable";
+}
+
+<h2>Editable</h2>
+
+<body style="padding: 20px">
+<h1 style="margin-bottom: 20px">Angular-xeditable Starter Template</h1>
+<div ng-app="app" ng-controller="Ctrl">
+    <!-- editable element -->
+    <a href="#" editable-text="user.name">{{ user.name || "empty" }}</a>
+    <div id="debug" style="margin-top: 30px">
+        {{ user | json }}
+    </div>
+</div>
+</body>
+
+
+
+<!-- app.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+<script src="~/Scripts/app.js"></script>
+<script src="~/Scripts/xeditable.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+

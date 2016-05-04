@@ -36,7 +36,7 @@ namespace StudentApplication.Web.Controllers
         {
             return View();
         }
-       public ActionResult editingInLine()
+       public ActionResult Editable()
         {
             return View();
         }

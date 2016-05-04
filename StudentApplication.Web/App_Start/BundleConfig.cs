@@ -32,6 +32,8 @@ namespace StudentApplication.Web
                 "~/Scripts/Edit.js",
                 "~/Scripts/TestStudent.js",
                 "~/Scripts/app.js",
+                "~/Scripts/xeditable.js",
+                "~/Scripts/xeditable.min.js",
                 "~/Scripts/Service.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
