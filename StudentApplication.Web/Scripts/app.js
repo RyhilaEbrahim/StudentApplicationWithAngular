@@ -76,7 +76,6 @@ app.controller('Ctrl', ['$scope', 'StudentService', function ($scope, StudentSer
                 var getStudentData = StudentService.addStudent(Student);
                 getStudentData.then(function(msg) {
                     getAllStudents();
-                    getAllCities();
                     alert(msg.data);
                    $scope.divstudent = false;
                 }, function() {
@@ -100,7 +99,6 @@ app.controller('Ctrl', ['$scope', 'StudentService', function ($scope, StudentSer
 
             clearFields();
            $scope.action = "Add";
-            
            $scope.divstudent = true;
         };
 

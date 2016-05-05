@@ -23,12 +23,12 @@
             </tr>
 
             <tr ng-repeat="student in students ">
-                <td><a href="#" editable-text="student.Name" onaftersave="UpdateName(student)">{{student.Name}}</a></td>
-                <td><a href="#" editable-text="student.Email" onaftersave="UpdateName(student)">{{student.Email}}</a></td>
-                <td><a href="#" editable-text="student.Class" onaftersave="UpdateName(student)">{{student.Class}}</a></td>
-                <td><a href="#" editable-text="student.EnrollYear" onaftersave="UpdateName(student)">{{student.EnrollYear}}</a></td>
-                <td><a href="#" editable-text="student.City" onaftersave="UpdateName(student)">{{student.City}}</a></td>
-                <td><a href="#" editable-text="student.Country" onaftersave="UpdateName(student)">{{student.Country}}</a></td>
+                <td><a href="#" editable-text="student.Name" onaftersave="UpdateName(student)" e-required>{{student.Name|| form.$editable[ 0 ].error}}</a></td>
+                <td><a href="#" editable-text="student.Email" onaftersave="UpdateName(student)"  e-required>{{student.Email || form.$editable[ 0 ].error}}</a></td>
+                <td><a href="#" editable-text="student.Class" onaftersave="UpdateName(student)"  e-required>{{student.Class || form.$editable[ 0 ].error}}</a></td>
+                <td><a href="#" editable-text="student.EnrollYear" onaftersave="UpdateName(student)"  e-required>{{student.EnrollYear || form.$editable[ 0 ].error}}</a></td>
+                <td><a href="#" editable-text="student.City" onaftersave="UpdateName(student)"  e-required>{{student.City || form.$editable[ 0 ].error}}</a></td>
+                <td><a href="#" editable-text="student.Country" onaftersave="UpdateName(student)"  e-required>{{student.Country || form.$editable[ 0 ].error}}</a></td>
                <td>
 
                   <span ng-click="delete(student)" class="btn btn-danger">Delete</span>
@@ -40,58 +40,62 @@
 
         <div ng-show="divstudent">
             <p class="divHead"></p>
-            <table class="table">
-                <tr>
-                    <td><b><i>{{action}} Student</i></b></td>
+            <form name="myForm">
+                <table class="table">
+                    <tr>
+                        <td><b><i>{{action}} Student</i></b></td>
 
-                </tr>
+                    </tr>
 
-                <tr>
-                    <td><b>Id</b></td>
-                    <td>
-                        <input type="text" disabled="disabled" ng-model="StudentId" />
-                    </td>
-                    <td><b>Name</b></td>
-                    <td>
-                        <input required type="text" ng-model="Name" placeholder="Enter name" />
-                    </td>
+                    <tr>
+                        <td><b>Id</b></td>
+                        <td>
+                            <input type="text" disabled="disabled" ng-model="StudentId" />
+                        </td>
+                        <td><b>Name</b></td>
+                        <td>
+                            <input required type="text" ng-model="Name" placeholder="Enter name" class="form-control" />
+                        </td>
 
-                </tr>
+                    </tr>
 
-                <tr>
-                    <td><b>Email</b></td>
-                    <td>
-                        <input type="text" ng-model="Email" ng-required="true" placeholder="Enter email" />
-                    </td>
-                    <td><b>Year Enrolled</b></td>
-                    <td>
-                        <input type="text" ng-model="EnrollYear" ng-required="true" placeholder="Enter year enrolled" />
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Class</b></td>
-                    <td>
-                        <input type="text" ng-model="Class" ng-required="true" placeholder="Enter Class" />
-                    </td>
-                    <td><b>City</b></td>
-                    <td>
-                        <input type="text" ng-model="City" ng-required="true" placeholder="Enter City" />
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>Country</b></td>
-                    <td>
-                        <input type="text" ng-model="Country" ng-required="true" placeholder="Enter Country" />
-                    </td>
-                    <td></td>
-                    <td>
-                        <input type="button" ng-disabled="!myform.$valid" class="btn btn-default" value="Save" ng-click="save()" />
-                        <input type="button" class="btn btn-danger" value="Cancel" ng-click="cancel()" />
-                    </td>
-                </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>
+                            <input type="text" ng-model="Email" ng-required="true" placeholder="Enter email" class="form-control" />
+                        </td>
+                        <td><b>Year Enrolled</b></td>
+                        <td>
+                            <input type="text" name="Year" ng-model="EnrollYear" ng-minlength="4" ng-maxlength="10" placeholder="Enter year enrolled" class="form-control" />
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Class</b></td>
+                        <td>
+                            <input type="text" ng-model="Class" ng-required="true" placeholder="Enter Class" class="form-control" />
+                        </td>
+                        <td><b>City</b></td>
+                        <td>
+                            <input type="text" ng-model="City" ng-required="true" placeholder="Enter City" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Country</b></td>
+                        <td>
+                            <input type="text" ng-model="Country" ng-required="true" placeholder="Enter Country" class="form-control" />
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="button" class="btn btn-default" value="Save" ng-click="save()" ng-disabled="Name===undefined||Name.length===0||EnrollYear===undefined||EnrollYear.length===0||Enroll.lenght>4 ||Enroll.lenght<4||Email===undefined||Email.length===0||Class===undefined||Class.length===0 ||City===undefined||City.length===0 ||Country===undefined||Country.length===0 "/>
+                            <input type="button" class="btn btn-danger" value="Cancel" ng-click="cancel()" />
+                        </td>
+                    </tr>
 
-            </table>
+                </table>
+            </form>
         </div>
+       
     </div>
 </div>
 
