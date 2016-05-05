@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
+﻿using System.Web;
 using System.Web.Http;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Owin;
 using StudentApplication.Web.Models;
 
 namespace StudentApplication.Web.Controllers
@@ -18,10 +10,6 @@ namespace StudentApplication.Web.Controllers
     public class MeController : ApiController
     {
         private ApplicationUserManager _userManager;
-
-        public MeController()
-        {
-        }
 
         public MeController(ApplicationUserManager userManager)
         {

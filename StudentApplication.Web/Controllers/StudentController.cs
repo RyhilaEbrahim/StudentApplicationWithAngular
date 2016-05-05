@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using AutoMapper;
 using StudentApplication.Core.Domain;
 using StudentApplication.Core.Interfaces;
@@ -13,36 +9,32 @@ namespace StudentApplication.Web.Controllers
     {
         private readonly IStudentRepository _studentRepository;
         private readonly ICityRepsitory _cityRepository;
-        private readonly IMappingEngine _mappingEngine;
 
         public StudentController(IStudentRepository studentRepository, IMappingEngine mappingEngine, ICityRepsitory cityRepsitory)
         {
-            _mappingEngine = mappingEngine;
             _cityRepository = cityRepsitory;
             _studentRepository = studentRepository;
         }
 
-        // GET: Student
         public ActionResult Index()
         {
             return View();
         }
-       
-            public ActionResult Edit()
-        {
-            return View();
-        }
-       public ActionResult Create()
-        {
-            return View();
-        }
-       public ActionResult Editable()
-        {
-            return View();
-        }
-       
-        
 
+        public ActionResult EditableStudent()
+        {
+            return View();
+        }
+        public ActionResult Edit()
+        {
+            return View();
+        }
+      
+        public ActionResult Editable()
+        {
+            return View();
+        }
+       
         public JsonResult GetStudents()
         {
             var result = _studentRepository.GetAllStudents();
@@ -76,6 +68,13 @@ namespace StudentApplication.Web.Controllers
         }
 
         public string UpdateStudent(Student student)
+        {
+            if (student == null) return "Invalid record";
+            _studentRepository.Save(student);
+            return "Student Added";
+        }
+
+        public string UpdateName(Student student)
         {
             if (student == null) return "Invalid record";
             _studentRepository.Save(student);

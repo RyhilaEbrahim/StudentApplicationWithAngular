@@ -15,3 +15,20 @@ c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\Student
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.csprojResolveAssemblyReference.cache
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.dll
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.Migrations.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.Migrations.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.Runner.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\PeanutButter.FluentMigrator.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.Core.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\EntityFramework.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.DB.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.xml
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\FluentMigrator.Runner.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\StudentApplication.Core.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\bin\Debug\EntityFramework.xml
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.csprojResolveAssemblyReference.cache
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.dll
+C:\Systems\Angular\StudentApplication\StudentApplication.DB.Migrations\obj\Debug\StudentApplication.DB.Migrations.pdb

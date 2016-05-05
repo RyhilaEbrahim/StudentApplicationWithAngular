@@ -12,11 +12,11 @@
     <br />
     <br />
     <br />
-    <div data-ng-controller="StudentController as vm" ng-form ="myform">
-        <table class="table">
+    <div data-ng-controller="StudentController as vm" ng-form="myform">
+       <table class="table">
 
             <tr>
-                 <td><b>Name</b></td>
+                <td><b>Name</b></td>
                 <td><b>Email</b></td>
                 <td><b>Class</b></td>
                 <td><b>EnrollYear</b></td>
@@ -24,23 +24,23 @@
                 <td><b>Country</b></td>
             </tr>
 
-            <tr ng-repeat="student in vm.students "  >
-@*                <script type="text/ng-template" id="display">*@
+            <tr ng-repeat="student in vm.students ">
+               
 
-                    <td>{{student.Name}}</td>
-                    <td>{{student.Email}}</td>
-                    <td>{{student.Class}}</td>
-                    <td>{{student.EnrollYear}}</td>
-                    <td>{{student.City}}</td>
-                    <td>{{student.Country}}</td>
-                    <td>
+                <td>{{student.Name}}</td>
+                <td>{{student.Email}}</td>
+                <td>{{student.Class}}</td>
+                <td>{{student.EnrollYear}}</td>
+                <td>{{student.City}}</td>
+                <td>{{student.Country}}</td>
+                <td>
 
-@*                        <span ng-click="vm.editEmployee(student)" class="btn btn-primary">Edit</span>*@
-@*                        <span ng-click="vm.delete(student)" class="btn btn-danger">Delete</span>*@
+                    @*                        <span ng-click="vm.editEmployee(student)" class="btn btn-primary">Edit</span>*@
+                    @*                        <span ng-click="vm.delete(student)" class="btn btn-danger">Delete</span>*@
 
-                    </td>
+                </td>
 
-                </tr>
+            </tr>
         </table>
         <span ng-click="vm.addStudent()" class="btn btn-default">Add</span>
 
@@ -55,11 +55,11 @@
                 <tr>
                     <td><b>Id</b></td>
                     <td>
-                        <input type="text" disabled="disabled" ng-model="vm.StudentId" />
+                        <input type="text" disabled="disabled" ng-model="vm.StudentId"/>
                     </td>
                     <td><b>Name</b></td>
                     <td>
-                        <input required  type="text" ng-model="vm.Name"  placeholder="Enter name" />
+                        <input required type="text" ng-model="vm.Name" placeholder="Enter name"/>
                     </td>
 
                 </tr>
@@ -67,11 +67,11 @@
                 <tr>
                     <td><b>Email</b></td>
                     <td>
-                        <input type="text" ng-model="vm.Email" ng-required="true" placeholder="Enter email" />
+                        <input type="text" ng-model="vm.Email" ng-required="true" placeholder="Enter email"/>
                     </td>
                     <td><b>Year Enrolled</b></td>
                     <td>
-                        <input type="text" ng-model="vm.EnrollYear" ng-required="true" placeholder="Enter year enrolled" />
+                        <input type="text" ng-model="vm.EnrollYear" ng-required="true" placeholder="Enter year enrolled"/>
                     </td>
                 </tr>
                 <tr>
@@ -87,12 +87,12 @@
                 <tr>
                     <td><b>Country</b></td>
                     <td>
-                        <input type="text" ng-model="vm.Country" ng-required="true" placeholder="Enter Country" />
+                        <input type="text" ng-model="vm.Country" ng-required="true" placeholder="Enter Country"/>
                     </td>
                     <td></td>
                     <td>
-                        <input type="button" ng-disabled="!myform.$valid" class="btn btn-default" value="Save" ng-click="vm.save()" />
-                        <input type="button" class="btn btn-danger" value="Cancel" ng-click="vm.cancel()" />
+                        <input type="button" ng-disabled="!myform.$valid" class="btn btn-default" value="Save" ng-click="vm.save()"/>
+                        <input type="button" class="btn btn-danger" value="Cancel" ng-click="vm.cancel()"/>
                     </td>
                 </tr>
 
@@ -105,8 +105,7 @@
         @section scripts{
            <script src="~/Scripts/StudentClient.js"></script>
             <script src="~/Scripts/Service.js"></script>
-<link href="~/bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet" />
-<script src="~/bower_components/angular-xeditable/dist/js/xeditable.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-
+<script src="~/Scripts/xeditable.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         }

@@ -1,5 +1,5 @@
 ﻿
-StudentApp.service("StudentService", function ($http)
+app.service("StudentService", function ($http)
 {
     this.getStudents = function ()
     {
@@ -46,6 +46,7 @@ StudentApp.service("StudentService", function ($http)
         
     }
 
+   
     this.addStudent = function (student) {
         var response = $http({
             method: "post",

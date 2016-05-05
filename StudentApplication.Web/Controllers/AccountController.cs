@@ -1,6 +1,4 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -17,10 +15,6 @@ namespace StudentApplication.Web.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
-        public AccountController()
-        {
-        }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {

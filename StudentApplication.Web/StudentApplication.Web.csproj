@@ -368,7 +368,6 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
-    <Content Include="Scripts\TestStudent.js" />
     <Content Include="Scripts\xeditable.js" />
     <Content Include="Scripts\xeditable.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -416,8 +415,8 @@
     </Content>
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
-    <Content Include="Views\Student\Create.cshtml" />
     <Content Include="Views\Student\Editable.cshtml" />
+    <Content Include="Views\Student\EditableStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

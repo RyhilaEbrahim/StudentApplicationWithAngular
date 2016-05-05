@@ -106,6 +106,7 @@ c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\Student
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Web\bin\FluentMigrator.pdb
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Web\bin\FluentMigrator.xml
 c:\users\ryhila\documents\visual studio 2015\Projects\StudentApplication\StudentApplication.Web\bin\FluentMigrator.Runner.pdb
+C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Razor.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\ApplicationInsights.config
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\roslyn\csc.exe
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -164,7 +165,6 @@ C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Http
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Http.WebHost.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Mvc.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Optimization.dll
-C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.Razor.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.WebPages.dll
 C:\Systems\Angular\StudentApplication\StudentApplication.Web\bin\System.Web.WebPages.Razor.dll

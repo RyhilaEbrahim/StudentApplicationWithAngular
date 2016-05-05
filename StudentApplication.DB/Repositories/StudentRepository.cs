@@ -32,6 +32,7 @@ namespace StudentApplication.DB.Repositories
            _studentDbContext.SaveChanges();
         }
 
+
         public List<Student> GetAllStudents()
         {
             return _studentDbContext.Students.ToList();

@@ -1,0 +1,105 @@
+﻿@model StudentApplication.Web.Models.StudentViewModel
+
+@{
+    ViewBag.Title = "EditableStudent";
+}
+
+<h2>Editable Student</h2>
+
+<div ng-app="app" class="container">
+    <br/>
+    <br/>
+    <br/>
+    <div data-ng-controller="Ctrl">
+        <table class="table">
+
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Email</b></td>
+                <td><b>Class</b></td>
+                <td><b>EnrollYear</b></td>
+                <td><b>City</b></td>
+                <td><b>Country</b></td>
+            </tr>
+
+            <tr ng-repeat="student in students ">
+                <td><a href="#" editable-text="student.Name" onaftersave="UpdateName(student)">{{student.Name}}</a></td>
+                <td><a href="#" editable-text="student.Email" onaftersave="UpdateName(student)">{{student.Email}}</a></td>
+                <td><a href="#" editable-text="student.Class" onaftersave="UpdateName(student)">{{student.Class}}</a></td>
+                <td><a href="#" editable-text="student.EnrollYear" onaftersave="UpdateName(student)">{{student.EnrollYear}}</a></td>
+                <td><a href="#" editable-text="student.City" onaftersave="UpdateName(student)">{{student.City}}</a></td>
+                <td><a href="#" editable-text="student.Country" onaftersave="UpdateName(student)">{{student.Country}}</a></td>
+               <td>
+
+                  <span ng-click="delete(student)" class="btn btn-danger">Delete</span>
+
+                </td>
+             </tr>
+        </table>
+        <span ng-click="addStudent()" class="btn btn-default">Add</span>
+
+        <div ng-show="divstudent">
+            <p class="divHead"></p>
+            <table class="table">
+                <tr>
+                    <td><b><i>{{action}} Student</i></b></td>
+
+                </tr>
+
+                <tr>
+                    <td><b>Id</b></td>
+                    <td>
+                        <input type="text" disabled="disabled" ng-model="StudentId" />
+                    </td>
+                    <td><b>Name</b></td>
+                    <td>
+                        <input required type="text" ng-model="Name" placeholder="Enter name" />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>
+                        <input type="text" ng-model="Email" ng-required="true" placeholder="Enter email" />
+                    </td>
+                    <td><b>Year Enrolled</b></td>
+                    <td>
+                        <input type="text" ng-model="EnrollYear" ng-required="true" placeholder="Enter year enrolled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Class</b></td>
+                    <td>
+                        <input type="text" ng-model="Class" ng-required="true" placeholder="Enter Class" />
+                    </td>
+                    <td><b>City</b></td>
+                    <td>
+                        <input type="text" ng-model="City" ng-required="true" placeholder="Enter City" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Country</b></td>
+                    <td>
+                        <input type="text" ng-model="Country" ng-required="true" placeholder="Enter Country" />
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="button" ng-disabled="!myform.$valid" class="btn btn-default" value="Save" ng-click="save()" />
+                        <input type="button" class="btn btn-danger" value="Cancel" ng-click="cancel()" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/Service.js"></script>
+    <script src="~/Scripts/xeditable.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+}
